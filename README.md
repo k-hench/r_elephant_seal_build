@@ -1,6 +1,6 @@
 # README for  `r_elephant_seal` <img src="logo.svg" align="right" alt="" width="120" />
 
-Github repo for the [podman](https://podman.io/) conatiner [`r_elephant_seal`](https://hub.docker.com/repository/docker/khench/r_elephant_seal).
+Github repository for the [podman](https://podman.io/) conatiner [`r_elephant_seal`](https://hub.docker.com/repository/docker/khench/r_elephant_seal).
 
 ## Documentation of the initial setup
 
