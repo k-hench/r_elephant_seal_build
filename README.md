@@ -10,7 +10,7 @@ Originally, the `r_elephant_seal` container was build using [buildah](https://bu
 buildah bud -t r_elephant_seal
 ```
 
-To make the container publically availabe, it is pushed to [dockerhub](https://hub.docker.com/r/khench/r_elephant_seal) using [skopeo](https://github.com/containers/skopeo) and [podman](https://podman.io/):
+To make the container publicly available, it is pushed to [dockerhub](https://hub.docker.com/r/khench/r_elephant_seal) using [skopeo](https://github.com/containers/skopeo) and [podman](https://podman.io/):
 
 ```sh
 skopeo login -u khench docker.io
@@ -25,7 +25,7 @@ The bundled software can be accessed directly from [dockerhub](https://hub.docke
 podman run docker.io/khench/r_elephant_seal:v0.1 which seqtk
 ```
 
-Running rstudio interactively is possible, yet it will likely be necessary to bind the directories conatining the project on the local machine to the container using the `-v` flag.
+Running `Rstudio` interactively is possible, yet it will likely be necessary to bind the directories containing the project on the local machine to the container using the `-v` flag.
 
 ```sh
 podman run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix r_elephant_seal rstudio
