@@ -25,7 +25,7 @@ The bundled software can be accessed directly from [dockerhub](https://hub.docke
 podman run docker.io/khench/r_elephant_seal:v0.1 which seqtk
 ```
 
-Running rstudio interactively is possible, likely it will be necessary to bind the directories conatining the project on the local machine to the container using the `-v` flag.
+Running rstudio interactively is possible, yet it will likely be necessary to bind the directories conatining the project on the local machine to the container using the `-v` flag.
 
 ```sh
 podman run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix r_elephant_seal rstudio
