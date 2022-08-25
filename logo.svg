@@ -24,7 +24,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1050"
+     inkscape:window-height="1023"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="2.2088124"
@@ -33,7 +33,8 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:current-layer="svg8"
+     inkscape:document-rotation="0" />
   <defs
      id="defs2" />
   <metadata
@@ -49,7 +50,7 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#ffffff;fill-opacity:0.1;stroke:none;stroke-width:0.0881063;stroke-linecap:round;stroke-dasharray:0.0881063, 0.08810630000000000;stop-color:#000000"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0881063;stroke-linecap:round;stroke-dasharray:0.0881063, 0.08810630000000000;stop-color:#000000"
      d="M 22.297383,0.49877121 39.685953,0.53730406 57.07452,0.49877121 67.886042,14.117942 78.758047,27.688944 74.851103,44.632764 71.019624,61.594241 55.335661,69.104133 39.685953,76.683601 24.036242,69.104133 8.3528132,61.594241 4.5208004,44.632764 0.61385654,27.688944 11.485861,14.117942 Z"
      id="path849" />
   <path
