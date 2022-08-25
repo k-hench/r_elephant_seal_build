@@ -14,7 +14,7 @@ To make the container publicly available, it is pushed to [dockerhub](https://hu
 
 ```sh
 skopeo login -u khench docker.io
-podman push localhost/r_elephant_seal docker.io/khench/r_elephant_seal:v0.1
+podman push localhost/r_elephant_seal docker.io/khench/r_elephant_seal:v0.2
 ```
 
 ## Accessing the container
@@ -22,7 +22,7 @@ podman push localhost/r_elephant_seal docker.io/khench/r_elephant_seal:v0.1
 The bundled software can be accessed directly from [dockerhub](https://hub.docker.com/r/khench/qc_suite) with `podman` (or `docker`, or `singularity`):
 
 ```sh
-podman run docker.io/khench/r_elephant_seal:v0.1 which seqtk
+podman run docker.io/khench/r_elephant_seal:v0.2 which seqtk
 ```
 
 Running `Rstudio` interactively is possible, yet it will likely be necessary to bind the directories containing the project on the local machine to the container using the `-v` flag.
