@@ -4,7 +4,7 @@ LABEL authors="Kosmas Hench" \
 
 # install R dependencies
 RUN apt update && \
-    apt install -y wget dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+    apt install -y wget procps dirmngr gnupg apt-transport-https ca-certificates software-properties-common
 
 # install R
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key '95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7' && \
@@ -42,4 +42,4 @@ RUN conda config --add channels defaults && \
 # install packages available via conda
 COPY env.yml /
 RUN mamba env create -f /env.yml && conda clean -a
-ENV PATH ${PATH}:/miniconda/envs/r_elephant_seal-0.1/bin
+ENV PATH ${PATH}:/miniconda/envs/r_elephant_seal-0.3/bin
