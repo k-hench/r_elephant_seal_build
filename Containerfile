@@ -25,6 +25,9 @@ RUN sed 's/^R_LIBS_USER/# R_LIBS_USER/' /etc/R/Renviron > /etc/R/Renviron.contro
 
 # setup R environment
 COPY renv.lock ./
+RUN apt install -y libfreetype-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.168/quarto-1.1.168-linux-amd64.deb && \
+    apt install -y ./quarto-1.1.168-linux-amd64.deb
 RUN R --slave -e 'install.packages("renv", version = "0.15.5")' && \
     R -e 'renv::restore()'
 
